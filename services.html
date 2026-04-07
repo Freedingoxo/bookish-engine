@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات الأتمتة بالذكاء الاصطناعي</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2rem;
+            background: linear-gradient(45deg, #FFD700, #FF8C00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .price {
+            font-size: 3rem;
+            color: #FFD700;
+            margin: 20px 0;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 25px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,215,0,0.2);
+        }
+        .service-card h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background: #FFD700;
+            color: #0a0e27;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #FF8C00;
+            transform: scale(1.02);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 أتمتة متجر Shopify بالذكاء الاصطناعي</h1>
+            <p style="margin-top: 15px;">وفر 80% من وقتك وأتمت متجرك بالكامل</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🚀 ما نقدمه</h3>
+            <ul style="margin-top: 15px; line-height: 2;">
+                <li>✓ بناء جيش من 100 وكيل AI يدير متجرك</li>
+                <li>✓ أتمتة إضافة المنتجات وتحديث المخزون</li>
+                <li>✓ إدارة الأسعار والتسويق تلقائياً</li>
+                <li>✓ خدمة عملاء آلية 24/7</li>
+                <li>✓ تقارير وتحليلات يومية</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>💰 الاستثمار</h3>
+            <div class="price">500$</div>
+            <p>رسوم إعداد لمرة واحدة</p>
+            <p style="margin-top: 10px;">+ 100$ شهرياً صيانة وتحديثات</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎁 ماذا تربح</h3>
+            <ul style="margin-top: 15px; line-height: 2;">
+                <li>✓ توفير 40-60 ساعة عمل شهرياً</li>
+                <li>✓ زيادة المبيعات 15-30%</li>
+                <li>✓ متجر يعمل 24/7 بدون إشراف</li>
+                <li>✓ دعم فني مجاني</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h3>📞 تواصل معنا</h3>
+            <p style="margin: 15px 0;">للحصول على عرض مخصص لمتجرك</p>
+            <button class="btn" onclick="copyEmail()">📧 نسخ البريد الإلكتروني</button>
+        </div>
+    </div>
+
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText('hicham.elbassri.web@gmail.com');
+            alert('✅ تم نسخ البريد الإلكتروني');
+        }
+    </script>
+</body>
+</html>
