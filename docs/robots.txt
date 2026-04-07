@@ -1,0 +1,3 @@
+User-agent: * 
+Allow: / 
+Sitemap: https://Freedingoxo.github.io/bookish-engine/sitemap.xml 
