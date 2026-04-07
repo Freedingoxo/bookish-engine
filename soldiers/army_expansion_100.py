@@ -1,5 +1,11 @@
 from datetime import datetime
-from .base_soldier import BaseSoldier
+import sys
+import os
+
+# إضافة المجلد الرئيسي إلى مسار Python
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from soldiers.base_soldier import BaseSoldier
 
 class ArmyExpansion:
     def __init__(self):

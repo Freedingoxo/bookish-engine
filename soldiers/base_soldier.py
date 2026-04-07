@@ -9,8 +9,17 @@ class BaseSoldier:
         self.specialty = specialty
         self.status = "active"
         self.missions_completed = 0
-        
+        self.logs = []
+    
+    def log(self, message: str):
+        self.logs.append({
+            "timestamp": datetime.now().isoformat(),
+            "soldier": self.name,
+            "message": message
+        })
+    
     def execute_mission(self, mission: Dict) -> Dict:
+        self.log(f"تنفيذ مهمة: {mission.get('action', 'unknown')}")
         self.missions_completed += 1
         return {
             "status": "success",
